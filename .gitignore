@@ -1,0 +1,48 @@
+# ==========================================
+# 1. Backend Python (API & Dependências)
+# ==========================================
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Cache e arquivos compilados do Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ==========================================
+# 2. Dados e Banco de Dados Vetorial (LlamaIndex)
+# ==========================================
+# Ignora todas as anotações Markdown reais, mas mantém a estrutura da pasta
+api/dados/*
+!api/dados/.gitkeep
+
+# Ignora o cache do índice vetorial gerado pelo LlamaIndex 
+# (Tanto na raiz quanto dentro da pasta de dados, dependendo de onde o usuário rodar)
+.cerebro_index/
+api/dados/.cerebro_index/
+*.json
+
+# ==========================================
+# 3. Editor (Vim / Neovim)
+# ==========================================
+# Arquivos de swap e backup
+*.swp
+*.swo
+*~
+*.bak
+
+# Sessões e views locais
+Session.vim
+.netrwhist
+*un~
+
+# ==========================================
+# 4. Sistema Operacional
+# ==========================================
+# Linux / WSL / Outros
+.DS_Store
+Thumbs.db
+.directory
